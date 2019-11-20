@@ -36,8 +36,7 @@ namespace LINQProblems
                 doubleArray[i] = double.Parse(item[i]);
             }
             return doubleArray;
-        }
-       
-
+        }    
+        //add functionality for averaging the averages together and it's done!
     }
 }

@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace LINQProblems
 {
-    class Program
+    class AlphabeticallyOrdered
     {
-        static void Main(string[] args)
-        {
-
-        }
     }
 }
