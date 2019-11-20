@@ -8,10 +8,16 @@ namespace LINQProblems
 {
     class StringClassWithoutDuplicates
     {
-        List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
+        //List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
         public static List<string> ListWithoutDuplicates(List<string> items)
         {
-            return items.Distinct().ToList();
+            List<string> newList;
+            newList = items.Distinct().ToList();
+            foreach(string item in newList)
+            {
+                Console.WriteLine(item);
+            }
+            return newList;
         }
 
     }
