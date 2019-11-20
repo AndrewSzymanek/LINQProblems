@@ -10,11 +10,15 @@ namespace LINQProblems
     {
         static void Main(string[] args)
         {
-            List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
-            StringClassWithoutDuplicates.ListWithoutDuplicates(names);
-
-            Console.ReadLine();
-            //List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            List<string> thWords;
+            thWords = SubStringFinder.GetThWords(words);
+            foreach (string word in thWords)
+            {
+                Console.WriteLine(word);
+            }
+            
+            Console.ReadLine(); 
         }
     }
 }

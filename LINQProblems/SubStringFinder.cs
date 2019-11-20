@@ -9,11 +9,11 @@ namespace LINQProblems
     class SubStringFinder
     {
         //List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics"};
+        //tested in Program class
 
         public static List<string> GetThWords(List<string> input)
-        {
-            return input.Where(w => w.ToLower().Contains("th")).ToList();
+        {  
+            return input.Where(w => w.ToLower().Contains("th")).ToList();       
         }
-       
     }
 }
