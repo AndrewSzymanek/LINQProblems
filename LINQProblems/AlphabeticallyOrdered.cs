@@ -19,10 +19,9 @@ namespace LINQProblems
         }
         public static List<string> NumberOfEachChar(string lettersAlphabetized)
         {
-
             List<string> output = new List<string>();
-            var something = lettersAlphabetized.GroupBy(l => l);
-            foreach(var letter in something)
+            var groupedLetters = lettersAlphabetized.GroupBy(l => l);
+            foreach(var letter in groupedLetters)
             {
                 output.Add(letter.Key.ToString());
                 output.Add(letter.Count().ToString());
